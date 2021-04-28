@@ -12,10 +12,10 @@ import { RecipeItemComponent } from './recipes/recipe-list/recipe-item/recipe-it
 import { ShoppingListComponent } from './shopping-list/shopping-list.component';
 import { ShoppingEditComponent } from './shopping-list/shopping-edit/shopping-edit.component';
 import { DropdownDirective } from './shared/dropdown.directive';
-<<<<<<< HEAD
 import { ShoppingListService } from './shopping-list/shopping-list.service';
-=======
->>>>>>> 50111c8b5e2ed1389e0fa23597288b33541cb8f3
+import { AppRoutingModule } from './app-routing.module';
+import { RecipeStartComponent } from './recipes/recipe-start/recipe-start.component';
+import { RecipeEditComponent } from './recipes/recipe-edit/recipe-edit.component';
 
 @NgModule({
   declarations: [
@@ -27,17 +27,16 @@ import { ShoppingListService } from './shopping-list/shopping-list.service';
     RecipeItemComponent,
     ShoppingListComponent,
     ShoppingEditComponent,
-    DropdownDirective
+    DropdownDirective,
+    RecipeStartComponent,
+    RecipeEditComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
+    AppRoutingModule
   ],
-<<<<<<< HEAD
   providers: [ShoppingListService],
-=======
-  providers: [],
->>>>>>> 50111c8b5e2ed1389e0fa23597288b33541cb8f3
   bootstrap: [AppComponent]
 })
 export class AppModule { }
